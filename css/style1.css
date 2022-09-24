@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    max-width: 100vw;
+}
+
+header{
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #636C79;
+}
+
+.img-logo{
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+header img{
+    position: relative;
+    left: 7.063rem;
+    margin-top: 0.9rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 30.5rem;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.nav-items{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    padding: 0 1.165rem;
+    color: #ffff;
+    opacity: 0.7;
+    font-weight: lighter;
+    font-size: 1.05rem;
+}
+
+.btn1{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    position: relative;
+    left: 37.3rem;
+    width: 11rem;
+    height: 2.562rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 0.8px solid rgba(178, 190, 181, 0.4);
+    background-color: transparent;
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.fa-bars{
+    color: #494d54;
+    display: none;
+}
+
+@media screen and (max-width: 1450px) {
+    .btn1{
+        left: 31rem;
+    }
+}
+
+@media screen and (max-width: 1345px) {
+    nav, .btn1{
+        left: 16rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .fa-bars{
+        display: flex;
+        font-size: 2.1rem;
+    }
+    .btn1{
+        display: none;
+    }
+    nav{
+        left: 0.5rem;
+    }
+    header{
+        justify-content: space-around;
+    }
+    header img{
+        left: 2.3rem;
+    }
+    .img-logo{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header{
+        justify-content: space-between;
+    }
+    nav{
+        display: none;
+    }
+    .fa-bars{
+        position: relative;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+.img-logo{
+    height: 1.8rem;
+}
+}
+
+.section-group-bg{
+    width: 100vw;
+    background-color: #636C79;
+    padding: 2.5rem 0 4.5rem;
+}
+
+.section-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 87%;
+    margin: auto;
+}
+
+.grp-img{
+    width: 32rem;
+    height: 36rem;
+    border-radius: 0.3rem;
+}
+
+.emailButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3.13rem;
+    max-width: 34.4rem;
+    background-color: #ffff;
+    place-items: center;
+    padding: 0.4rem 0.4rem 0.4rem 0;
+}
+
+.group-content h1, .grp1 h1{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    width: 36.2rem;
+    font-size: 4.15rem;
+    line-height: 4.5rem;
+    font-weight: 800;
+    color: #fff0f0;
+    text-overflow: clip;
+}
+
+.group-content p, .grp1 p{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    width: 34.375rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    margin-top: 3.125rem;
+    color: #ffff;
+    opacity: 0.6;
+    text-overflow: clip;
+}
+
+[alt*="email_icon"]{
+    height: 1.375rem;
+}
+
+.text-box{
+    width: 18.75rem;
+    font-family: 'Noto Sans Balinese', sans-serif;
+    height: 1.93rem;
+    border: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.btn2{
+    width: 11rem;
+    height: 3.312rem;
+    font-size: 1.062rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #8BB7A2;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .section-group{
+        gap: 0.87rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    [alt*="group"]{
+        width: 25rem;
+        height: 28rem;
+    }
+    .group-content h1{
+        font-size: 3em;
+    }
+    .group-content p{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .section-group{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    [alt*="group"]{
+        width: 31rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .group-content h1{
+        width: 80%;
+        font-size: 1.5rem;
+        margin: auto;
+        line-height: 1.8rem;
+    }
+    .group-content p{
+        width: 80%;
+        font-size: 0.9rem;
+        margin: auto;
+        line-height: auto;
+    }
+    [alt*="email_icon"]{
+        display: none;
+    }
+    .emailButton{
+        padding-right: 0rem;
+    }
+    [alt*="group"]{
+        width: 88%;
+        height: auto;
+        margin: auto;
+        position: static;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .text-box{
+        display: none;
+    }
+    .emailButton{
+        background-color: transparent;
+        width: 50%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .btn2{
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .btn-a{
+        position: static;
+        margin: auto;
+        margin-left: -0.79rem;
+    }
+}
+
+.target-section-head{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    margin: auto;
+    margin-top: 6.5rem;
+    text-align: center;
+    font-size: 2.4rem;
+    width: 61%;
+    font-weight: 1000;
+    line-height: 3.7rem;
+}
+
+@media screen and (max-width: 600px) {
+    .target-section-head{
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+    }
+}
+
+.target-stats{
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 3.15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 72%;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.stat-num{
+    font-size: 2.45rem;
+    font-weight: 505;
+}
+
+.stat-cont{
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 750px) {
+    .target-stats{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .target-stats{
+        grid-template-columns: 1fr;
+    }
+    .stat-num{
+        font-size: 1.7rem;
+    }
+    .stat-cont{
+        font-size: 0.9rem;
+    }
+}
+
+.stat-img{
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    width: 70%;
+}
+
+.stat-img img{
+    width: 97%;
+    height: 30rem;
+}
+
+@media screen and (max-width: 500px) {
+    .stat-img img{
+        height: 21rem;
+    }
+}
+
+.design-head{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    margin: auto;
+    margin-top: 9.5rem;
+    text-align: center;
+    font-size: 2.9rem;
+    width: 43.5%;
+    font-weight: 1000;
+    line-height: 3.7rem;
+}
+
+@media screen and (max-width: 1210px) {
+    .design-head{
+        width: 63%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design-head{
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 2.65rem;
+    }
+}
+
+.design-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    margin: auto;
+    place-items: center;
+    margin-top: 2.8rem;
+    gap: 0.8rem;
+}
+
+.design-content h1, .grp2 h1{
+    color: #000;
+    font-size: 2.5rem;
+    width: 30.8rem;
+    line-height: 3.35rem;
+}
+
+.design-content p, .grp2 p{
+    color: #000;
+    font-size: 1.28rem;
+    margin-top: 1.65rem;
+}
+
+.btng{
+    margin-top: 2.25rem;
+}
+
+.grp-img1{
+    height: 32rem;
+}
+
+@media screen and (max-width: 1240px) {
+    .design-section, .secg1 {
+        grid-template-columns: 1fr;
+    }
+    .grp-img1{
+        margin-top: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grp2 h1, .grp2 p{
+        width: 77%;
+        margin: auto;
+    }
+    .grp2 p{
+        margin-top: 1.7rem;
+    }
+    .grp-img1{
+        height: 17.5rem;
+        width: 82.5%;
+        margin: 1.6rem auto auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .grp2 h1{
+        font-size: 2.1rem;
+    }
+    .grp2 p{
+        font-size: 1rem;
+    }
+    .grp2 h1, .grp2 p{
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .grp2 h1{
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+}
+
+.digital-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    margin: auto;
+    place-items: center;
+    margin-top: 6.5rem;
+    gap: 0.8rem;
+}
+
+@media screen and (max-width: 1240px) {
+    .grp-ord1{
+        order: 1;
+    }
+    .secg1{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .digital-img img{
+        width: 210%;
+        margin-left: -1.85rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .digital-img img{
+        width: 13.5rem;
+    }
+    .digital-img{
+        width: 75%;
+    }
+}
+
+.desk-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    margin: auto;
+    place-items: center;
+    margin-top: 6.5rem;
+    gap: 0.8rem;
+}
+
+@media screen and (max-width: 1240px) {
+    .desk-section{
+        grid-template-columns: 1fr;
+    }
+}
+
+.team-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: auto;
+    margin-top: 9rem;
+    place-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .team-header p{
+        position: relative;
+        left: -2.7rem;
+        width: 32rem;
+    }
+    .team-header h1{
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .team-header{
+        grid-template-columns: 1fr;
+    }
+}
+
+.team-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 77.77%;
+    margin: auto;
+    place-items: center;
+    margin-top: 2.95rem;
+}
+
+.card img{
+    width: 21.5rem;
+    height: 25rem;
+}
+
+.card h2{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    font-size: 1.28rem;
+    margin-top: 1.1rem;
+    opacity: 0.84;
+}
+
+.card p{
+    margin-top: 1rem;
+    font-family: 'Noto Sans Balinese', sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.55rem;
+    opacity: 0.6;
+    width: 20.56rem;
+}
+
+@media screen and (max-width: 1340px) {
+    .team-cards{
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .team-cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .team-cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .team-cards{
+        width: 85%;
+    }
+    .card img{
+        width: 17rem;
+        height: 21.5rem;
+        margin: auto;
+    }
+    .card p{
+        width: 85%;
+    }
+}
+
+.btn-end-sec{
+    margin-top: 2.8rem;
+    text-align: center;
+}
+
+.btn-end{
+    width: 13rem;
+}
+
+footer{
+    width: 100%;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Noto Sans Balinese', sans-serif;
+    padding: 3.2rem 0 5.5rem 0;
+}
+
+.footer-head{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+}
+
+.fl-items{
+    margin: 0 0.6rem;
+    background-color: #282F34;
+    border-radius: 1.4rem;
+    width: 1.4rem;
+    list-style: none;
+    display: flex;
+    place-items: center;
+    padding: 0.78rem;
+}
+
+hr{
+    max-width: 75%;
+    margin: auto;
+    margin-top: 2.5rem;
+    opacity: 0.4;
+}
+
+.footer-list{
+    margin: auto;
+    margin-top: 3.5rem;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-transform: capitalize;
+    color: #fff;
+    gap: 4.4rem;
+}
+
+.flist h2{
+    font-size: 1.21rem;
+    margin-bottom: 0.8rem;
+}
+
+.fitems{
+    padding: 9px 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    opacity: 0.55;
+}
+
+@media screen and (max-width: 830px) {
+    .footer-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .footer-head{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7rem;
+    } 
+}
+
+@media screen and (max-width: 490px) {
+    .footer-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fl-items{
+        margin: 0 0.3rem;
+        width: 1.4rem;
+        padding: 0.6rem;
+    }
+}
